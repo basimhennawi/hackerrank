@@ -4,12 +4,9 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class Solution
-{
-
+public class Solution {
 	static long[] a, b, d, eOdd, eEven, fOdd, fEven;
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		StringBuilder sb = new StringBuilder();
 		int n = Integer.parseInt(in.next());
@@ -18,9 +15,9 @@ public class Solution
 		a = new long[s];
 		b = new long[s];
 		d = new long[s];
-		eOdd = new long[s];
+		eOdd  = new long[s];
 		eEven = new long[s];
-		fOdd = new long[s];
+		fOdd  = new long[s];
 		fEven = new long[s];
 
 		for (int i = 0; i < s; i++) {
@@ -53,10 +50,8 @@ public class Solution
 		while (q-- > 0) {
 			long t = Long.parseLong(in.next());
 			long i = t / n, j = t % n, II = i, JJ = j;
-
 			long aa = 0, bb = 0;
-			int mid;
-			int low = 0, high = s - 1;
+			int mid, low = 0, high = s - 1;
 			if (Inside(II, JJ, 0)) {
 				tmp = EvaluatePosition(II, JJ, 0);
 				aa = tmp.a;
@@ -75,49 +70,43 @@ public class Solution
 						low = mid;
 						i = aa;
 						j = bb;
-					} else
+					} else {
 						high = mid;
+					}
 				}
 			}
-
-			i++;
-			j++;
-			sb.append(i).append(" ").append(j).append("\n");
+			sb.append(++i).append(" ").append(++j).append("\n");
 		}
-		sb.deleteCharAt(sb.length() - 1);
 		System.out.println(sb.toString());
 	}
 
-	static Pair EvaluatePosition(long i, long j, int p)
-	{
+	static Pair EvaluatePosition(long i, long j, int p) {
 		Pair pair = new Pair();
 		if (p % 2 == 0) {
 			if (p % 4 == 0) {
-				pair.a = eOdd[p] + fEven[p] + j;
-				pair.b = eEven[p] - fOdd[p] - i;
+				pair.a = eOdd[p]  + fEven[p] + j;
+				pair.b = eEven[p] - fOdd[p]  - i;
 			} else {
-				pair.a = eOdd[p] + fEven[p] - j;
-				pair.b = eEven[p] - fOdd[p] + i;
+				pair.a = eOdd[p]  + fEven[p] - j;
+				pair.b = eEven[p] - fOdd[p]  + i;
 			}
 		} else {
 			if ((1 + p) % 4 == 0) {
-				pair.a = eEven[p] + fOdd[p] + i;
-				pair.b = eOdd[p] - fEven[p] + j;
+				pair.a = eEven[p] + fOdd[p]  + i;
+				pair.b = eOdd[p]  - fEven[p] + j;
 			} else {
-				pair.a = eEven[p] + fOdd[p] - i;
-				pair.b = eOdd[p] - fEven[p] - j;
+				pair.a = eEven[p] + fOdd[p]  - i;
+				pair.b = eOdd[p]  - fEven[p] - j;
 			}
 		}
 		return pair;
 	}
 
-	static Boolean Inside(long i, long j, int p)
-	{
+	static Boolean Inside(long i, long j, int p) {
 		return i >= a[p] && j >= b[p] && i <= a[p] + d[p] && j <= b[p] + d[p];
 	}
 
-	static class Pair
-	{
+	static class Pair {
 		public long a, b;
 	}
 }
