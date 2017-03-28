@@ -1,1 +1,1 @@
-Hackerrank - Search <a href="https://www.hackerrank.com/challenges/missing-numbers">Missing Numbers</a>
+Hackerrank - Search - <a href="https://www.hackerrank.com/challenges/missing-numbers">Missing Numbers</a>
