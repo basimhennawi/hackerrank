@@ -1,8 +1,5 @@
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
+import java.lang.StringBuilder;
 
 public class Solution {
 	static long[] a, b, d, eOdd, eEven, fOdd, fEven;
