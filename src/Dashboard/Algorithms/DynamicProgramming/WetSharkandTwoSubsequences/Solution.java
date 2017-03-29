@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Hackerrank {
+	
 	final static int MOD = 1000000007;
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
