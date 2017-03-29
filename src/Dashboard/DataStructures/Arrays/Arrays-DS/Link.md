@@ -1,1 +1,0 @@
-[https://www.hackerrank.com/challenges/arrays-ds](https://www.hackerrank.com/challenges/arrays-ds)
