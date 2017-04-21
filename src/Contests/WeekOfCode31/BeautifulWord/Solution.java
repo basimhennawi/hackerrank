@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-public class Hackerrank {
-
+public class Solution {
     static Scanner in = new Scanner(System.in);
     public static void main(String[] args) {
         String s = in.nextLine();
