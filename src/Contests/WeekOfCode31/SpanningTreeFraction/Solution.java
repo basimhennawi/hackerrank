@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class Hackerrank {
-
+public class Solution {
     static Scanner in = new Scanner(System.in);
     static double high, low;
     static List<edge> L;
