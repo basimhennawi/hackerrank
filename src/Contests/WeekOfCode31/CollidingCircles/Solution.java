@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Hackerrank {
+public class Solution {
     final static double PI = 3.14159265358979323846264338327;
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
