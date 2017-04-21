@@ -4,8 +4,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.HashMap;
 
-public class Hackerrank {
-
+public class Solution {
     static Scanner in = new Scanner(System.in);
     static StringBuilder sb = new StringBuilder();
     static ArrayList<HashSet<Integer>> adj;
