@@ -6,37 +6,37 @@ int main() {
     cin >> n;
     switch(n) {
         case 0:
-            std::cout<<"zero";
+            std::cout << "zero";
             break;
         case 1:
-            std::cout<<"one";
+            std::cout << "one";
             break;
         case 2:
-            std::cout<<"two";
+            std::cout << "two";
             break;
         case 3:
-            std::cout<<"three";
+            std::cout << "three";
             break;
         case 4:
-            std::cout<<"four";
+            std::cout << "four";
             break;
         case 5:
-            std::cout<<"five";
+            std::cout << "five";
             break;
         case 6:
-            std::cout<<"six";
+            std::cout << "six";
             break;
         case 7:
-            std::cout<<"seven";
+            std::cout << "seven";
             break;
         case 8:
-            std::cout<<"eight";
+            std::cout << "eight";
             break;
         case 9:
-            std::cout<<"nine";
+            std::cout << "nine";
             break;
         default:
-            std::cout<<"Greater than 9";
+            std::cout << "Greater than 9";
             break;
         }
     return 0;
